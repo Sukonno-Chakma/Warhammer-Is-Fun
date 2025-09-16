@@ -1,0 +1,278 @@
+.page-head {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+  padding: 3rem 1rem;
+}
+
+.page-head h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.page-head p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #d3c27f; 
+}
+
+html, body { margin: 0; padding: 0; }
+
+:root{
+ 
+  --gold-1: #ffd76a;
+  --gold-2: #ff9b3d;
+  --ink: #1a1a1a;
+  --paper: rgba(255,255,255,0.58);  
+  --panel: rgba(248,248,248,0.78);   
+  --glass-dark: rgba(0,0,0,0.45);   
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: #222;
+  background-color: #0b0b0b;
+  background-image: url(images/Factions/WarhammerMain.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+header, footer {
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--glass-dark);
+  backdrop-filter: blur(2px) saturate(110%);
+}
+
+
+header h1{
+  margin: 0 0 .25rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  font-size: clamp(2.2rem, 4vw + 1rem, 3.6rem);
+  background: linear-gradient(180deg, var(--gold-1), var(--gold-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow:
+    0 0 24px rgba(255, 179, 0, .15),
+    0 2px 0 rgba(0,0,0,.55);
+}
+header p{
+  margin: 0;
+  color: #f4f4f4;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+
+main {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 32px 20px;
+  line-height: 1.7;
+  background: var(--paper);                 
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  backdrop-filter: blur(2px);               
+}
+
+
+.page-head h2, main > h2{
+  margin: 0 0 14px;
+  font-weight: 800;
+  color: #111;
+  text-shadow: 0 1px 0 rgba(255,255,255,.6), 0 3px 12px rgba(0,0,0,.1);
+}
+
+
+.faction-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.faction {
+  background: rgba(20, 20, 20, 0.8);
+  border-radius: 10px;
+  padding: 1rem;
+  color: #eaeaea;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faction:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.faction:focus-within{
+  outline: 3px solid rgba(0,0,0,0.6);
+  outline-offset: 2px;
+}
+
+.faction img{
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;       
+  object-fit: cover;          
+  object-position: 50% 35%;    
+}
+
+.faction[data-focus="center"] img { object-position: 50% 50%; }
+.faction[data-focus="top"]    img { object-position: 50% 15%; }
+.faction[data-focus="bottom"] img { object-position: 50% 85%; }
+.faction[data-focus="left"]   img { object-position: 15% 50%; }
+.faction[data-focus="right"]  img { object-position: 85% 50%; }
+
+
+@supports not (aspect-ratio: 16 / 9) {
+  .faction img { height: 160px; }
+}
+
+.faction h3{
+  margin: 12px 12px 6px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ebe5e5;
+  text-shadow: 0 1px 0 rgba(255,255,255,.6);
+}
+
+.faction p{
+  margin: 0 12px 16px;
+  color: #eeeaeafb;            
+  font-size: 0.97rem;
+}
+
+.controls{
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+@media (max-width: 820px){ .controls { grid-template-columns: 1fr; } }
+
+:root{
+  --accent-1: #ffd76a;   
+  --accent-2: #ff9b3d;   
+}
+
+.tabs { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+.tab{
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  padding: 10px 16px;
+  border-radius: 999px; 
+  color: #111;
+  background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(230,230,230,.90));
+  border: 1px solid rgba(0,0,0,.28);
+  box-shadow:
+    0 2px 0 rgba(0,0,0,.35),
+    0 1px 0 rgba(255,255,255,.65) inset;
+  backdrop-filter: blur(3px) saturate(115%);
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease, color .12s ease;
+}
+
+.tab:hover{
+  transform: translateY(-1px);
+  box-shadow:
+    0 3px 0 rgba(0,0,0,.38),
+    0 1px 0 rgba(255,255,255,.8) inset;
+}
+
+.tab.is-active{
+  color: #1b1300;
+  background: linear-gradient(180deg, var(--accent-1), var(--accent-2));
+  border-color: #845100;
+  box-shadow:
+    0 3px 0 rgba(0,0,0,.45),
+    0 0 18px rgba(255,165,0,.35);
+  text-shadow:
+    0 1px 0 rgba(255,255,255,.3),
+    0 0 10px rgba(255,186,0,.35);
+}
+
+.tab:focus-visible{
+  outline: 3px solid var(--accent-1);
+  outline-offset: 2px;
+}
+
+@media (max-width: 540px){
+  .tab{ padding: 9px 14px; letter-spacing: .05em; }
+}
+
+.search{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  background: rgba(255,255,255,.9);
+  color: #222;
+}
+
+.view-toggle{ display: inline-flex; gap: 6px; }
+.view-btn{
+  border: 1px solid #cfcfcf;
+  background: rgba(255,255,255,.75);
+  color: var(--ink);
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.view-btn.is-active{ border-color: #999; background: rgba(255,255,255,.95); }
+
+.tab:focus-visible, .view-btn:focus-visible, .search:focus-visible{
+  outline: 3px solid rgba(0,0,0,0.6);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: reduce){
+  .faction{ transition: none; }
+  .faction:hover{ transform: none; }
+}
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: #aaa;
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  border-top: 1px solid #333;
+}
+
+footer a {
+  color: #d3c27f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.3); 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; 
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background: rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+}

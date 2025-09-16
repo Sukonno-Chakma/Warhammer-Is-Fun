@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warhammer 40K Factions</title>
+</head>
+<header class="page-head">
+  <h1>Warhammer 40K Factions</h1>
+  <p>This is a small project of my mine. I like the lore and the diverse factions within the Warhammer 40,000 universe.</p>
+</header>
+<body>
+  <main>
+  <header class="page-head">
+    <h2><img src="https://40k.gallery/wp-content/themes/40K-Gallery/images/40K-Gallery-Logo-default.svg" alt="40K Gallery Logo" style="height: 150px;"></h2>
+    <div class="controls">
+      <div class="tabs" role="tablist" aria-label="Allegiance">
+        <button class="tab is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="tab" data-filter="imperium" role="tab" aria-selected="false">Imperium of Man</button>
+        <button class="tab" data-filter="chaos" role="tab" aria-selected="false">Chaos</button>
+        <button class="tab" data-filter="xenos" role="tab" aria-selected="false">Xenos</button>
+      </div>
+      <input id="factionSearch" class="search" type="search" placeholder="Search factions…" aria-label="Search factions">
+    </div>
+  </header>
+
+  <section id="cardView" class="faction-grid" aria-label="Factions (Cards)">
+
+    <article class="faction" data-group="imperium" data-name="Space Marines" data-tags="adeptus astartes marines">
+      <img src="images/factions/space_marines.jpg" alt="Space Marines heraldry">
+      <h3>Space Marines</h3>
+      <p>Space Marines are the elite super-soldiers of the Imperium of Man in the Warhammer 40,000 universe. Genetically enhanced and clad in power armor, they are stronger, faster, and more resilient than ordinary humans. Organized into Chapters, each with its own culture and heraldry, they serve as humanity’s ultimate defenders against alien, heretic, and daemonic threats. Their unwavering loyalty and fanatical zeal make them iconic symbols of the Imperium’s might.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Ultramarines" data-tags="guilliman codex">
+      <img src="images/factions/Ultramarine.png" alt="Ultramarines Chapter badge">
+      <h3>Ultramarines</h3>
+      <p>Ultramarines are one of the most prominent and influential Space Marine Chapters in the Warhammer 40,000 universe. Descended from the Primarch Roboute Guilliman, they are renowned for their strict adherence to the Codex Astartes, the foundational guide to Space Marine organization and tactics. Based on the world of Macragge, the Ultramarines lead the realm of Ultramar, a prosperous empire of human worlds. Their discipline, honor, and strategic brilliance have made them the model by which many other Chapters are judged.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Blood Angels" data-tags="sanguinius melee jump packs">
+      <img src="images/factions/blood_angels.jpg" alt="Blood Angels icon">
+      <h3>Blood Angels</h3>
+      <p>Blood Angels are a renowned Space Marine Chapter descended from the Primarch Sanguinius, known for their nobility, artistic spirit, and fierce combat prowess. They are celebrated for their angelic appearance and unmatched skill in close combat, often leading devastating assaults. However, they struggle with the genetic curse of the Red Thirst and the Black Rage, which drive them into berserk bloodlust. Despite this flaw, they remain loyal defenders of the Imperium and are revered as tragic yet heroic warriors.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Dark Angels" data-tags="inner circle ravenwing deathwing">
+      <img src="images/factions/dark_angels.jpg" alt="Dark Angels winged sword">
+      <h3>Dark Angels</h3>
+      <p>Dark Angels are one of the oldest and most secretive Space Marine Chapters, descending from the Primarch Lion El’Jonson. Known for their monastic traditions and relentless discipline, they excel in both strategy and firepower. They secretly hunt the Fallen—former brothers who betrayed the Chapter during the Horus Heresy—making secrecy central to their identity. Outwardly loyal and stoic, they are driven by an unending quest for redemption.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Space Wolves" data-tags="fenris melee heroes">
+      <img src="images/factions/space_wolves.jpg" alt="Space Wolves wolf sigil">
+      <h3>Space Wolves</h3>
+      <p>Space Wolves are a fiercely independent Space Marine Chapter descended from the Primarch Leman Russ. They embody the spirit of Fenris, their icy homeworld, favoring savage close-combat tactics and feral courage. Unlike other Chapters, they shun rigid discipline, embracing individuality and warrior brotherhood instead. Despite their wild nature, they are unwaveringly loyal defenders of the Imperium.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Black Templars" data-tags="crusade zealous chainswords">
+      <img src="images/factions/black_templars.jpg" alt="Black Templars cross">
+      <h3>Black Templars</h3>
+      <p>Black Templars are a zealous Space Marine Chapter descended from the Imperial Fists and inspired by the legendary Sigismund. They are renowned for their fanatical devotion to the Emperor and their eternal crusades across the galaxy. Rejecting the idea of static homeworlds, they travel aboard massive fleets, constantly seeking out heretics, mutants, and xenos to destroy. Their relentless faith and martial fervor make them one of the most aggressive and uncompromising Chapters in the Imperium.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Grey Knights" data-tags="daemons psykers">
+      <img src="images/factions/grey_knights.jpg" alt="Grey Knights sigil">
+      <h3>Grey Knights</h3>
+      <p>Grey Knights are an elite, secretive Chapter of Space Marines dedicated solely to combating daemonic threats. Created from the genetic legacy of the Emperor himself, they are incorruptible and resistant to the powers of Chaos. Operating as the Chamber Militant of the Ordo Malleus, they wield powerful psychic abilities alongside advanced weaponry. Cloaked in secrecy, they strike with precision to eradicate daemons before their existence becomes known to the wider Imperium.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Deathwatch" data-tags="ordo xenos kill teams">
+      <img src="images/factions/deathwatch.jpg" alt="Deathwatch icon">
+      <h3>Deathwatch</h3>
+      <p>Deathwatch are a specialized Space Marine Chapter serving as the militant arm of the Ordo Xenos of the Inquisition. Drawn from many different Chapters, they form elite kill-teams trained to hunt and eliminate alien threats. Their black armor is adorned with a silver left arm, symbolizing their oath to the Deathwatch. They operate covertly and strike surgically, often behind enemy lines.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Adepta Sororitas" data-tags="sisters of battle flamers melta miracles">
+      <img src="images/factions/adepta_sororitas.jpg" alt="Adepta Sororitas fleur-de-lys">
+      <h3>Adepta Sororitas</h3>
+      <p>Adepta Sororitas (Sisters of Battle) are the militant arm of the Ecclesiarchy, devoted to defending the Imperial faith. Fanatically loyal to the Emperor, they wield holy relics, power armor, and faith-fueled zeal to purge heresy and corruption. Known for their unshakable piety, they inspire Imperial citizens and terrify heretics alike. Their fiery conviction makes them one of the Imperium’s most devout and fearless fighting forces.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Adeptus Custodes" data-tags="custodes golden guardians">
+      <img src="images/factions/adeptus_custodes.jpg" alt="Adeptus Custodes aquila">
+      <h3>Adeptus Custodes</h3>
+      <p>Adeptus Custodes are the Emperor’s personal bodyguards and the most elite warriors in the Imperium. Genetically crafted to surpass even Space Marines, each Custodian is a master of war, strategy, and psychic resistance. Clad in ornate golden armor, they guard the Imperial Palace on Terra and rarely leave its walls. When they do, their presence alone can turn the tide of entire campaigns.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Adeptus Mechanicus" data-tags="skitarii tech priest canticles">
+      <img src="images/factions/adeptus_mechanicus.jpg" alt="Adeptus Mechanicus cog">
+      <h3>Adeptus Mechanicus</h3>
+      <p>Adeptus Mechanicus are the tech-priests of Mars who worship the Machine God and safeguard humanity’s technological knowledge. They supply and maintain the Imperium’s weapons, starships, and war machines, often replacing their own flesh with cybernetic augmentations. Their armies field powerful robots, skitarii soldiers, and massive war engines in battle.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Astra Militarum" data-tags="imperial guard tanks artillery">
+      <img src="images/factions/astra_militarum.jpg" alt="Astra Militarum crest">
+      <h3>Astra Militarum</h3>
+      <p>Astra Militarum (Imperial Guard) are the main human army of the Imperium, made up of countless billions of soldiers from across the galaxy. Though individually fragile compared to Space Marines, they overwhelm enemies with sheer numbers, heavy armor, and relentless artillery support. They are the backbone of the Imperium’s military might.</p>
+    </article>
+
+    <article class="faction" data-group="imperium" data-name="Imperial Knights" data-tags="knights titanic chassis lances">
+      <img src="images/factions/imperial_knights.jpg" alt="Imperial Knights icon">
+      <h3>Imperial Knights</h3>
+      <p>Imperial Knights are towering, piloted war machines controlled by noble families sworn to the Imperium. Each Knight is a walking fortress bristling with devastating weaponry, capable of turning battles single-handedly. They fight with honor and uphold ancient traditions passed down through their Knightly Houses.</p>
+    </article>
+
+
+    <article class="faction" data-group="chaos" data-name="Chaos Space Marines" data-tags="heretic astartes">
+      <img src="images/factions/chaos_marines.png" alt="Chaos eight-pointed star">
+      <h3>Chaos Space Marines</h3>
+      <p>Chaos Space Marines are former Space Marines who turned traitor during the Horus Heresy, pledging themselves to the Chaos Gods. Twisted by the Warp, they wield dark sorcery and corrupted wargear, seeking to destroy the Imperium they once served.</p>
+    </article>
+
+    <article class="faction" data-group="chaos" data-name="Death Guard" data-tags="nurgle plague resilient">
+      <img src="images/factions/death_guard.jpg" alt="Death Guard icon">
+      <h3>Death Guard</h3>
+      <p>Death Guard are a Chaos Space Marine Legion devoted to Nurgle, the Plague God. Once proud warriors, they are now bloated, disease-ridden husks who spread contagion and decay across battlefields, enduring any wound with unnatural resilience.</p>
+    </article>
+
+    <article class="faction" data-group="chaos" data-name="Thousand Sons" data-tags="tzeentch sorcery rubricae">
+      <img src="images/factions/thousand_sons.jpg" alt="Thousand Sons icon">
+      <h3>Thousand Sons</h3>
+      <p>Thousand Sons are a Legion of sorcerous Chaos Space Marines dedicated to Tzeentch, the Changer of Ways. Masters of psychic powers and arcane knowledge, they are cursed with rampant mutation, their ranks filled with dust-filled suits of armor animated by magic.</p>
+    </article>
+
+    <article class="faction" data-group="chaos" data-name="Chaos Daemons" data-tags="khorne nurgle tzeentch slaanesh greater daemons">
+      <img src="images/factions/chaos_daemons.jpg" alt="Chaos Daemons symbol">
+      <h3>Chaos Daemons</h3>
+      <p>Chaos Daemons are the immortal embodiments of the Chaos Gods’ will, born from the Warp itself. They take countless terrifying forms, spreading corruption, fear, and destruction wherever they manifest in realspace.</p>
+    </article>
+
+    <article class="faction" data-group="chaos" data-name="Chaos Knights" data-tags="corrupted knights dread">
+      <img src="images/factions/chaos_knights.jpg" alt="Chaos Knights icon">
+      <h3>Chaos Knights</h3>
+      <p>Chaos Knights are corrupted Imperial Knights who have pledged themselves to the Chaos Gods. Twisted by daemonic influence, they become nightmarish engines of war, wielding dark powers and spreading terror across the galaxy.</p>
+    </article>
+
+
+    <article class="faction" data-group="xenos" data-name="Aeldari" data-tags="craftworld asuryani seers aspect warriors">
+      <img src="images/factions/aeldari.jpg" alt="Aeldari rune">
+      <h3>Aeldari (Craftworlds)</h3>
+      <p>Aeldari (Craftworlds) are the remnants of a once-great ancient empire, living aboard massive Craftworlds after their civilization fell to decadence and birthed the Chaos God Slaanesh. They are graceful, psychic, and highly advanced, striking with precision to preserve their dwindling race.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="Drukhari" data-tags="dark eldar raiders commorragh">
+      <img src="images/factions/drukhari.jpg" alt="Drukhari icon">
+      <h3>Drukhari</h3>
+      <p>Drukhari (Dark Eldar) are sadistic Aeldari who dwell in the dark city of Commorragh, sustaining themselves through the pain and suffering of others. They raid realspace for slaves and plunder, using speed and cruelty as their greatest weapons.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="Harlequins" data-tags="laughing god masque troupes">
+      <img src="images/factions/harlequins.jpg" alt="Harlequins masque symbol">
+      <h3>Harlequins</h3>
+      <p>Harlequins are enigmatic Aeldari warrior-performers who serve the Laughing God, Cegorach. They weave through battle like dancers, using acrobatics and illusion to confound enemies while preserving the Aeldari’s ancient myths.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="Ynnari" data-tags="ynnead rebirth">
+      <img src="images/factions/ynnari.jpg" alt="Ynnari icon">
+      <h3>Ynnari</h3>
+      <p>Ynnari are a faction of Aeldari who worship Ynnead, the God of the Dead, believing he will free their race from Slaanesh’s curse. They seek to unite all Aeldari and wield necromantic powers tied to death and rebirth.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="Orks" data-tags="waaagh dakka speed freaks">
+      <img src="images/factions/orks.png" alt="Ork glyph">
+      <h3>Orks</h3>
+      <p>Orks are brutal, green-skinned aliens driven purely by war and destruction. They are crude yet resilient, growing stronger the more they fight, and their sheer numbers and reckless ingenuity make them a constant galactic threat.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="Necrons" data-tags="dynasties living metal">
+      <img src="images/factions/necrons.jpg" alt="Necron sigil">
+      <h3>Necrons</h3>
+      <p>Necrons are ancient, skeletal machine-warriors who once ruled the galaxy before falling into stasis. Now awakened, they march to reclaim their former empire with unstoppable legions and devastating technology.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="T’au Empire" data-tags="tau drones battlesuits greater good">
+      <img src="images/factions/tau.jpg" alt="T’au Empire roundel">
+      <h3>T’au Empire</h3>
+      <p>T’au Empire are a young, technologically advanced species that believe in the “Greater Good,” a doctrine of collective progress and unity. They favor long-range firepower, advanced battlesuits, and cooperation among allied alien races.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="Tyranids" data-tags="hive fleets bioforms swarm">
+      <img src="images/factions/tyranids.jpg" alt="Tyranids hive symbol">
+      <h3>Tyranids</h3>
+      <p>Tyranids are a galaxy-spanning swarm of bioengineered organisms driven by an all-consuming Hive Mind. They strip entire planets of all biomass to grow their endless hive fleets, adapting rapidly to any resistance.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="Genestealer Cults" data-tags="ambush insurgency demolition">
+      <img src="images/factions/genestealer_cults.jpg" alt="Genestealer Cults icon">
+      <h3>Genestealer Cults</h3>
+      <p>Genestealer Cults are insidious infiltrators planted by the Tyranids, who infect human populations to create hybrid offspring loyal to the Hive Mind. They rise in rebellion to weaken worlds before the Tyranid invasion arrives.</p>
+    </article>
+
+    <article class="faction" data-group="xenos" data-name="Leagues of Votann" data-tags="kin sturdy clones">
+      <img src="images/factions/leagues_of_votann.jpg" alt="Leagues of Votann rune">
+      <h3>Leagues of Votann</h3>
+      <p>Leagues of Votann are hardy, clone-descended Kin who dwell in high-tech mining strongholds. Pragmatic and fiercely loyal to their kindred, they field powerful weapons, durable armor, and advanced technology to protect their ancient hoards.</p>
+    </article>
+  </section>
+   <button id="backToTop" aria-label="Back to top">↑</button>
+</main>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+</body>
+<footer>
+  <p>Sukonno chakma © 2023</p>
+  <p>Images are from 40K Gallery and used for entertainment purposes only.</p>
+  <p>Data sourced from <a href="https://warhammer40k.fandom.com/wiki/Warhammer_40k_Wiki">Warhammer 40k Wiki</a> and <a href="https://40k.gallery/">40K Gallery</a>.</p>
+  <p>Website created by Sukonno Chakma.</p>
+</footer>
+</html>
